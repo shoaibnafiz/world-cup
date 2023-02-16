@@ -68,6 +68,11 @@ header{
     text-align: center;
     padding: 25px 0;
 }
+.menu a:hover, .menu a.active{
+    color: white;
+    background-color: #DD0000;
+}
+
 /* Blogs Style */
 .blogs{
     display: grid;
@@ -109,6 +114,43 @@ header{
 }
 .blog-details div img{
     margin-right: 10px;
+}
+
+/* Upcoming Matches */
+.matches{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+    margin-right: 140px;
+}
+.match{
+    width: 312px;
+    height: 242px;
+}
+.match .images{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.match .images span{
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #161616;
+}
+.match .match-details{
+    margin-left: 10px;
+    text-align: center;
+}
+.match .match-details h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.match .match-details small{
+    font-size: 16px;
+    font-weight: 400;
+    color: #4D4D4D;
 }
 
 /* Footer Styles */
@@ -155,7 +197,7 @@ footer hr{
         margin-top: 10px;
         margin-left: 2px;
     }
-    .header-title, .header-img,.header-img img, .blogs, .thumbnail img{
+    .header-title, .header-img,.header-img img, .blogs, .matches, .match, .thumbnail img{
         width: 100%;
     }
     .header-title p{
@@ -171,6 +213,10 @@ footer hr{
         border: 1px solid #E8E8E8;
     }
     .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .matches{
+        margin-top: 100px;
         grid-template-columns: repeat(1,1fr);
     }
     footer hr{
@@ -225,6 +271,10 @@ footer hr{
     }
     .blogs{
         grid-template-columns: repeat(2,1fr);
+    }
+    .matches{
+        grid-template-columns: repeat(2,1fr);
+        margin-right: 0;
     }
     footer hr{
         width: 700px;
