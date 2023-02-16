@@ -79,6 +79,7 @@ header{
     grid-template-columns: repeat(3,1fr);
     gap: 24px;
     margin-right: 140px;
+    margin-bottom: 100px;
 }
 
 .thumbnail img{
